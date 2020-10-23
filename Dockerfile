@@ -33,4 +33,4 @@ ADD /scripts/ /opt/scripts/
 RUN chmod -R 770 /opt/scripts/
 
 #Server Start
-ENTRYPOINT ["/opt/scripts/start.sh"]
+# ENTRYPOINT ["/opt/scripts/start.sh"]
