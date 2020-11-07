@@ -1,10 +1,10 @@
-FROM ich777/debian-baseimage
+FROM mastereric/debian
 
-LABEL maintainer="admin@minenet.at"
+LABEL maintainer="elitemastereric@gmail.com"
 
-RUN apt-get update && \
-	apt-get -y install --no-install-recommends lib32gcc1 lib32stdc++6 lib32stdc++6 && \
-	rm -rf /var/lib/apt/lists/*
+# RUN apt-get update && \
+# 	apt-get -y install --no-install-recommends lib32gcc1 lib32stdc++6 lib32stdc++6 && \
+#	rm -rf /var/lib/apt/lists/*
 
 ENV DATA_DIR="/serverdata"
 ENV STEAMCMD_DIR="${DATA_DIR}/steamcmd"
